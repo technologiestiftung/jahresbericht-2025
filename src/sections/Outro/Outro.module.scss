@@ -1,0 +1,74 @@
+@use "../../styles/base" as base;
+@use "../../styles/constants" as *;
+
+:local {
+  .wrapper {
+    padding: $spacing-5xl 0;
+    max-width: $smaller-content;
+    margin: 0 auto;
+    @media screen and (max-width: $absolute-break) {
+      padding: $spacing-4xl $spacing-l $spacing-5xl $spacing-l;
+    }
+    @media screen and (min-width: $absolute-break) and (max-width: $max-width-content) {
+      padding: $spacing-5xl $spacing-l;
+    }
+    & > h2 {
+      color: $color-primary-dark;
+      padding: $spacing-5xl 0;
+      @media screen and (max-width: $absolute-break) {
+        padding: 0 0 50px 0;
+      }
+    }
+    .content {
+      display: flex;
+      gap: 28px;
+      margin: $spacing-l 0 $spacing-4xl 0;
+      @media screen and (max-width: $absolute-break) {
+        flex-direction: column;
+        gap: $spacing-5xl;
+        margin: 0 0 $spacing-5xl 0;
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+        & > h3 {
+          color: $color-primary-dark;
+          font-size: $spacing-l;
+          @media screen and (max-width: $absolute-break) {
+            font-size: 20px;
+          }
+        }
+        & > p {
+          color: $color-black !important;
+          margin: $spacing-l 0 !important;
+          @include base.body;
+        }
+        & > a {
+          margin-top: auto;
+        }
+      }
+    }
+    .sub {
+      margin: 0 0 $spacing-4xl 0;
+      color: $color-primary-dark;
+      @media screen and (max-width: $absolute-break) {
+        margin: 0 0 40px 0;
+      }
+    }
+    .logoWrapper {
+      display: flex;
+      gap: $spacing-5xl;
+      img {
+        height: 120px;
+      }
+      @media screen and (max-width: $absolute-break) {
+        flex-direction: column;
+        gap: 40px;
+        img {
+          height: 120px;
+          width: 180px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<svg role="img" aria-labelledby="svgTitle svgDesc"  width="204" height="204" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+<title id="svgTitle">Neue Technologien Icon</title>
+<desc id="svgDesc">Eine Outline-Illustration: Ein Roboter, daneben drei diagonal angeordnete Punkte durch eine Linie verbunden</desc>
+<g clip-path="url(#clip0_627_400)">
+<path d="M69.4998 42.6666V22.8333H49.6665" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M99.2502 42.6667H39.7502C34.2733 42.6667 29.8335 47.1066 29.8335 52.5834V92.2501C29.8335 97.7269 34.2733 102.167 39.7502 102.167H99.2502C104.727 102.167 109.167 97.7269 109.167 92.2501V52.5834C109.167 47.1066 104.727 42.6667 99.2502 42.6667Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.9165 72.4167H29.8332" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M109.167 72.4167H119.083" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M84.375 67.4583V77.3749" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.625 67.4583V77.3749" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.75 122C184.656 122 191.875 114.781 191.875 105.875C191.875 96.9694 184.656 89.75 175.75 89.75C166.844 89.75 159.625 96.9694 159.625 105.875C159.625 114.781 166.844 122 175.75 122Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M111.25 159.625C120.156 159.625 127.375 152.406 127.375 143.5C127.375 134.594 120.156 127.375 111.25 127.375C102.344 127.375 95.125 134.594 95.125 143.5C95.125 152.406 102.344 159.625 111.25 159.625Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.75 197.25C184.656 197.25 191.875 190.031 191.875 181.125C191.875 172.219 184.656 165 175.75 165C166.844 165 159.625 172.219 159.625 181.125C159.625 190.031 166.844 197.25 175.75 197.25Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M125.171 151.616L161.883 173.009" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M161.829 113.991L125.171 135.384" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_627_400">
+<rect width="204" height="204" fill="white"/>
+</clipPath>
+</defs>
+</svg>

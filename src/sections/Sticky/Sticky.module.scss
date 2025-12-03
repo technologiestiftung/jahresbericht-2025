@@ -1,0 +1,100 @@
+@use "../../styles/base" as base;
+@use "../../styles/constants" as *;
+
+:local {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .wrapper {
+    position: relative;
+    .bg {
+      position: sticky;
+      z-index: -1;
+      width: 100%;
+      min-height: 100vh;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+      background-size: cover;
+      @media screen and (max-width: $max-width-content) {
+        background-position: center center;
+        background-repeat: no-repeat;
+        animation: fadeIn 0.5s ease-in-out forwards;
+        background-size: cover;
+        height: 100%;
+      }
+      img {
+        opacity: 0;
+        max-width: 1023px;
+        animation: fadeIn 0.5s ease-in-out forwards;
+        @media screen and (max-width: $max-width-content) {
+          height: 100%;
+          object-fit: cover;
+          background-size: cover;
+        }
+      }
+      .copyright {
+        width: 1023px;
+        @media screen and (max-width: $max-width-content) {
+        }
+        p {
+          color: rgba(0, 0, 0, 0.3);
+          font-size: $spacing-sm !important;
+          @include base.body;
+        }
+      }
+    }
+    .content {
+      width: 373px;
+      height: fit-content;
+      padding-bottom: 100vh;
+      @media screen and (max-width: $max-width-content) {
+        margin: 0;
+      }
+      .container {
+        background-color: white;
+        border: $spacing-xs solid $color-primary-dark;
+        border-radius: $border-radius;
+        padding: $spacing-xl $spacing-l;
+        @media screen and (max-width: $max-width-content) {
+          width: calc(100vw - $spacing-2xl);
+          margin: 0 $spacing-l;
+          padding: $spacing-l;
+        }
+        .sub {
+          color: $color-primary-dark !important;
+          @include base.body-bold;
+        }
+        h3 {
+          color: $color-primary-dark;
+          font-size: $spacing-l;
+          margin: 3px 0 27px 0;
+          line-height: $spacing-xl;
+          @media screen and (max-width: $max-width-content) {
+            margin: 0px 0 $spacing-l 0;
+          }
+        }
+        .paragraph {
+          color: $color-primary-dark !important;
+          @include base.body;
+          hyphens: auto;
+        }
+        a {
+          margin-top: 27px;
+          @media screen and (max-width: $max-width-content) {
+            margin-top: $spacing-l;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@use "../../styles/base" as base;
+@use "../../styles/constants" as *;
+
+:local {
+  .wrapper {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    z-index: 10;
+    bottom: $spacing-xl;
+    transition: $transition-slowest;
+    display: grid;
+    grid-template-columns: 1fr 56px;
+    gap: $spacing-s;
+    @media screen and (max-width: $absolute-break) {
+      z-index: 30;
+      grid-template-columns: 1fr 48px;
+      bottom: $spacing-m;
+    }
+    svg {
+      height: 40px;
+      width: 40px;
+      @media screen and (max-width: $absolute-break) {
+        height: 32px;
+        width: 32px;
+      }
+    }
+    & > div:not(.indicator) {
+      height: 56px;
+      @media screen and (max-width: $absolute-break) {
+        height: 48px;
+      }
+    }
+    .main {
+      display: flex;
+      box-shadow:
+        0px 0px $spacing-3xs 0px rgba(0, 0, 0, 0.24),
+        0px 0px $spacing-m $spacing-2xs rgba(0, 0, 0, 0.16);
+      justify-content: center;
+      padding: 0 $spacing-xs;
+      background: #fff;
+      @media screen and (max-width: $absolute-break) {
+        padding: 0 $spacing-xs;
+      }
+      & > div {
+        position: relative;
+        cursor: pointer;
+        width: 56px;
+        padding: $spacing-s;
+        @media screen and (max-width: $absolute-break) {
+          width: 48px;
+        }
+        .speechBubble {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translateX(-50%) translateY(-55px);
+          background: white;
+          padding: $spacing-s $spacing-sm;
+          box-shadow:
+            0px 0px $spacing-3xs 0px rgba(0, 0, 0, 0.24),
+            0px 0px $spacing-m $spacing-2xs rgba(0, 0, 0, 0.16);
+          width: fit-content;
+          p {
+            color: $color-primary-dark !important;
+            white-space: nowrap;
+            @include base.body-bold;
+          }
+        }
+        .speechBubble.down::after {
+          content: "";
+          position: absolute;
+          bottom: -18px;
+          left: 50%;
+          transform: translateX(-50%);
+          border-width: $spacing-sm;
+          border-style: solid;
+          border-color: white transparent transparent transparent;
+        }
+      }
+    }
+    .jump {
+      padding: $spacing-s;
+      background: #fff;
+      cursor: pointer;
+      box-shadow:
+        0px 0px $spacing-3xs 0px rgba(0, 0, 0, 0.24),
+        0px 0px $spacing-m $spacing-2xs rgba(0, 0, 0, 0.16);
+    }
+    .indicator {
+      transform: translateX($spacing-xs);
+      position: absolute;
+      height: $spacing-2xs;
+      background: $color-primary-dark;
+      width: 56px;
+      z-index: 11;
+      top: 0;
+      transition: $transition-slow;
+      @media screen and (max-width: $absolute-break) {
+        width: 48px;
+      }
+    }
+  }
+}

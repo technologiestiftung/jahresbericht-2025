@@ -1,0 +1,10 @@
+<svg role="img" aria-labelledby="svgTitle svgDesc" width="204" height="204" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+<title id="svgTitle">Prototyping Icon</title>
+<desc id="svgDesc">Eine Outline-Illustration: Ein Monitor, ein Smartphone und ein Play-Button</desc>
+<path d="M66.25 170.875V144.64V165.509" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49 170.875H82.125" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150.333 118H117.667C115.089 118 113 121.731 113 126.333V184.667C113 189.269 115.089 193 117.667 193H150.333C152.911 193 155 189.269 155 184.667V126.333C155 121.731 152.911 118 150.333 118Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M111.222 145H21.7778C14.7208 145 9 141.369 9 136.889V80.1111C9 75.6315 14.7208 72 21.7778 72H101.5M124 102.5V117.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M171.917 22.25H110.083C105.205 22.25 101.25 26.2048 101.25 31.0833V92.9167C101.25 97.7952 105.205 101.75 110.083 101.75H171.917C176.795 101.75 180.75 97.7952 180.75 92.9167V31.0833C180.75 26.2048 176.795 22.25 171.917 22.25Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M127.75 44.3333L154.25 61.9999L127.75 79.6666V44.3333Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg role="img" aria-labelledby="svgTitle svgDesc" width="204" height="204" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+<title id="svgTitle">Bildung Icon</title>
+<desc id="svgDesc">Eine Outline-Illustration: Ein offenes Buch, daneben eine Präsentationswand</desc>
+<g clip-path="url(#clip0_627_434)">
+<path d="M93.0835 99H193.917" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M188.875 99V154C188.875 156.652 187.813 159.196 185.922 161.071C184.031 162.946 181.466 164 178.792 164H108.208C105.534 164 102.969 162.946 101.078 161.071C99.1873 159.196 98.125 156.652 98.125 154V99" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M118.292 189L143.5 164L168.708 189" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M76.5 47.6667V127" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.1248 110C23.6109 110 22.159 109.403 21.0884 108.34C20.0179 107.278 19.4165 105.836 19.4165 104.333V30.6667C19.4165 29.1638 20.0179 27.7224 21.0884 26.6597C22.159 25.597 23.6109 25 25.1248 25H53.6665C59.7223 25 65.53 27.3881 69.8121 31.6389C74.0942 35.8897 76.4998 41.6551 76.4998 47.6667C76.4998 41.6551 78.9055 35.8897 83.1876 31.6389C87.4696 27.3881 93.2774 25 99.3332 25H127.875C129.389 25 130.841 25.597 131.911 26.6597C132.982 27.7224 133.583 29.1638 133.583 30.6667V104.333C133.583 105.836 132.982 107.278 131.911 108.34C130.841 109.403 129.389 110 127.875 110H93.6248C89.083 110 84.7272 111.791 81.5156 114.979C78.3041 118.167 76.4998 122.491 76.4998 127C76.4998 122.491 74.6956 118.167 71.484 114.979C68.2725 111.791 63.9167 110 59.3748 110H25.1248Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M93 80H143" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M93 64H143" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M93 48H143" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<clipPath id="clip0_627_434">
+<rect width="121" height="120" fill="white" transform="translate(83 84)"/>
+</clipPath>
+</defs>
+</svg>

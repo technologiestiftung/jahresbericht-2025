@@ -1,0 +1,110 @@
+@use "../../styles/base" as base;
+@use "../../styles/constants" as *;
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+.intro {
+  background-color: $color-primary-dark;
+  min-height: 100vh;
+  box-sizing: border-box;
+  .content {
+    display: flex;
+    & > div {
+      @media screen and (min-width: $max-width-content) {
+        flex: 1;
+      }
+    }
+    .logoAndHeadline {
+      padding-top: 84px;
+      .logo {
+        height: 69px;
+        margin-bottom: 87px;
+        @media screen and (max-width: $absolute-break) {
+          height: 43px;
+          margin-bottom: $spacing-xl;
+        }
+      }
+      @media screen and (max-width: $absolute-break) {
+        padding-top: 0;
+      }
+    }
+    .headerImage {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      & > div {
+        position: relative;
+        width: 100%;
+        text-align: right;
+        .scroll {
+          width: 55px;
+          height: 55px;
+          animation: down 2s infinite;
+          -webkit-animation: down 2s infinite;
+          bottom: 2.5px;
+          right: 0;
+          position: absolute;
+          transition:
+            opacity 0.3s ease-in-out,
+            bottom 0.3s ease-in-out;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+          @media screen and (max-width: $absolute-break) {
+            width: 40px;
+            height: 40px;
+          }
+          &.scrolled {
+            opacity: 0;
+          }
+        }
+        .header {
+          width: 100%;
+          max-height: 90vh;
+          max-width: 450px;
+          @media screen and (max-width: $absolute-break) {
+            width: 267px;
+          }
+        }
+      }
+      @media screen and (max-width: $absolute-break) {
+        padding-top: 37px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+      }
+    }
+    @media screen and (max-width: $absolute-break) {
+      padding: 0 $spacing-l;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+    }
+    @media screen and (min-width: $absolute-break) and (max-width: $smaller-content) {
+      flex-direction: column;
+      padding: 0 $spacing-xl;
+    }
+    @media screen and (min-width: $absolute-break) {
+      max-width: $smaller-content;
+      margin: 0 auto;
+      width: 100%;
+      height: 100vh;
+    }
+  }
+  @media screen and (min-width: $max-width-content) {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+}

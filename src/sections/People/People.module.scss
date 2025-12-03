@@ -1,0 +1,42 @@
+@use "../../styles/base" as base;
+@use "../../styles/constants" as *;
+
+:local {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: $spacing-5xl 0;
+    max-width: $smaller-content;
+    @media screen and (max-width: $absolute-break) {
+      padding: 30px $spacing-l 85px $spacing-l;
+    }
+    @media screen and (min-width: $absolute-break) and (max-width: $max-width-content) {
+      padding: $spacing-5xl $spacing-l;
+    }
+    h2 {
+      color: $color-primary-dark;
+      padding: $spacing-5xl 0;
+      @media screen and (max-width: $absolute-break) {
+        padding: 40px 0 $spacing-3xl 0;
+      }
+    }
+    h3 {
+      color: $color-primary-dark;
+      padding: 0 0 $spacing-3xl 0;
+    }
+    & > p {
+      color: $color-primary-dark !important;
+      padding: $spacing-5xl 0 !important;
+      @include base.alt-h2;
+    }
+
+    .btnWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: $absolute-break) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

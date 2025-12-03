@@ -1,0 +1,62 @@
+@use "./constants" as *;
+
+@mixin body {
+  font-family: "Source Serif Pro", serif;
+  font-size: $spacing-m;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+@mixin body-intro {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 150%;
+  margin: 0;
+  @media screen and (max-width: $absolute-break) {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 140%;
+  }
+}
+@mixin body-bold {
+  font-family: "Clan Pro";
+  font-size: $spacing-m;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+}
+@mixin copy-bold {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  font-size: $spacing-m;
+  line-height: 26px;
+  font-style: normal;
+  margin: 0;
+}
+@mixin copy {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  font-size: $spacing-m;
+  line-height: 26px;
+  font-style: normal;
+  margin: 0;
+}
+@mixin alt-h2 {
+  font-family: "Clan Pro";
+  font-size: $spacing-xl;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+}
+@mixin text-mobile {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}

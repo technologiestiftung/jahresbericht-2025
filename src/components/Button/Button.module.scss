@@ -1,0 +1,45 @@
+@use "../../styles/base" as base;
+@use "../../styles/constants" as *;
+
+:local {
+  .btn {
+    text-decoration: none;
+    padding: $spacing-s $spacing-m $spacing-s $spacing-s;
+    border: $spacing-2xs solid $color-primary-dark;
+    border-radius: $border-radius;
+    background: #fff;
+    color: $color-primary-dark;
+    transition: $transition-fast;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    user-select: none;
+    p {
+      width: auto;
+      margin: 0;
+      transform: translateY($spacing-3xs);
+      @include base.body-bold;
+    }
+    & > div {
+      margin-right: $spacing-xs;
+      height: $spacing-m;
+      width: $spacing-m;
+      min-height: $spacing-m;
+      min-width: $spacing-m;
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &:hover {
+      color: white;
+      background: $color-primary-dark;
+      p {
+        color: white !important;
+      }
+      svg path {
+        fill: white !important;
+      }
+    }
+  }
+}
