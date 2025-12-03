@@ -7,21 +7,41 @@ import Button from "../Button";
 import cn from "./Slider.module.scss";
 
 const Slider = () => {
+  const desktopSliderGroups = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [9, 10, 11],
+    [12, 13, 14],
+  ];
+
   const [indexActive, indexActiveSet] = useState(0);
 
   const sliderRef = useRef(null);
   const [sliderWidth, setSliderWidth] = useState(0);
-  const sliderGap = 28;
+  const sliderGap = 24;
 
   const { content: rueckblick, title } = content.rueckblick;
 
   const left = () => {
-    if (indexActive - 1 < 0) return indexActiveSet(rueckblick.length - 1);
-    indexActiveSet(indexActive - 1);
+    if (window.innerWidth <= 768) {
+      if (indexActive - 1 < 0) return indexActiveSet(rueckblick.length - 1);
+      indexActiveSet(indexActive - 1);
+    } else {
+      if (indexActive - 1 < 0)
+        return indexActiveSet(desktopSliderGroups.length - 1);
+      indexActiveSet(indexActive - 1);
+    }
   };
   const right = () => {
-    if (indexActive + 1 === rueckblick.length) return indexActiveSet(0);
-    indexActiveSet(indexActive + 1);
+    if (window.innerWidth <= 768) {
+      if (indexActive + 1 === rueckblick.length) return indexActiveSet(0);
+      indexActiveSet(indexActive + 1);
+    } else {
+      if (indexActive + 1 === desktopSliderGroups.length)
+        return indexActiveSet(0);
+      indexActiveSet(indexActive + 1);
+    }
   };
 
   const handleResize = () => {
@@ -68,6 +88,7 @@ const Slider = () => {
         >
           <Arrow />
         </div>
+        {/* CONTENT */}
         <div className={cn.sliderContentContainer}>
           <div
             className={cn.contentSlider}
@@ -76,32 +97,50 @@ const Slider = () => {
               gap: `${sliderGap}px`,
             }}
           >
+            {desktopSliderGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className={cn.desktopSlider}>
+                {group.map((singleGroup, singleGroupIndex) => {
+                  const currentRueckblick = rueckblick[singleGroup];
+                  return (
+                    <div key={singleGroupIndex} className={cn.singleGroup}>
+                      <div
+                        className={cn.bgImage}
+                        style={{
+                          backgroundImage: `url(${currentRueckblick.img.src})`,
+                        }}
+                      />
+                      <div className={cn.innerContentWrapper}>
+                        <div className={cn.innerContent}>
+                          <h4
+                            dangerouslySetInnerHTML={{
+                              __html: currentRueckblick.title,
+                            }}
+                          />
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: currentRueckblick.content,
+                            }}
+                          />
+                        </div>
+                        {!!currentRueckblick.btnText &&
+                          currentRueckblick.link && (
+                            <Button
+                              to={currentRueckblick.link}
+                              label={currentRueckblick.btnText}
+                            />
+                          )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
             {rueckblick.map((slide, index) => (
               <div
                 className={cn.slide}
                 key={index}
                 ref={index === 0 ? sliderRef : null}
               >
-                {["left", "right"].map(side => (
-                  <div key={side} className={cn[`${side}Container`]}>
-                    {slide.imgPosition === side ? (
-                      <div
-                        className={cn.bgImage}
-                        style={{ backgroundImage: `url(${slide.img.src})` }}
-                      />
-                    ) : (
-                      <div className={cn.content}>
-                        <h3 dangerouslySetInnerHTML={{ __html: slide.title }} />
-                        <p
-                          dangerouslySetInnerHTML={{ __html: slide.content }}
-                        />
-                        {!!slide.btnText && slide.link && (
-                          <Button to={slide.link} label={slide.btnText} />
-                        )}
-                      </div>
-                    )}
-                  </div>
-                ))}
                 <div className={cn.mobile}>
                   <div
                     className={cn.bgImage}
@@ -169,10 +208,15 @@ const Slider = () => {
           <Arrow />
         </div>
       </div>
-      <div className={cn.nav}>
-        <p>
-          {indexActive + 1} / {rueckblick.length}
-        </p>
+      <div className={cn.desktopNav}>
+        {desktopSliderGroups.map((_, desktopSliderGroupIndex) => (
+          <div
+            key={desktopSliderGroupIndex}
+            className={
+              indexActive === desktopSliderGroupIndex ? cn.active : cn.deactived
+            }
+          />
+        ))}
       </div>
     </section>
   );
