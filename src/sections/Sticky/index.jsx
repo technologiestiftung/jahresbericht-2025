@@ -12,6 +12,19 @@ function Sticky({ content, title, id }) {
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1280
   );
+  const [imgBuffer, setImgBuffer] = useState({});
+
+  async function urlToBase64(url) {
+    const res = await fetch(url);
+    const blob = await res.blob();
+
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+  }
 
   const RenderIMG = () => {
     const setIndex =
@@ -23,12 +36,17 @@ function Sticky({ content, title, id }) {
             ? 2
             : 3;
 
+    const item = content[setIndex];
+    const bufferEntry = imgBuffer[setIndex] || {};
+    const desktopSrc = bufferEntry.desktop || item.img.src;
+    const mobileSrc = bufferEntry.mobile || item.img.mobileSrc || desktopSrc;
+
     if (windowWidth < 1280) {
       return (
         <div
           className={cn.bg}
           style={{
-            backgroundImage: `url('${content[setIndex].img.mobileSrc || content[setIndex].img.src}')`,
+            backgroundImage: `url('${mobileSrc}')`,
           }}
         />
       );
@@ -36,7 +54,7 @@ function Sticky({ content, title, id }) {
 
     return (
       <div className={cn.bg}>
-        <img alt={content[setIndex].img.alt} src={content[setIndex].img.src} />
+        <img alt={content[setIndex].img.alt} src={desktopSrc} />
         {content[setIndex].img.copyright && (
           <div className={cn.copyright}>
             <p>{content[setIndex].img.copyright}</p>
@@ -76,6 +94,42 @@ function Sticky({ content, title, id }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
+    };
+  }, [content]);
+
+  useEffect(() => {
+    if (!content) return;
+    let cancelled = false;
+
+    async function preload() {
+      const buffer = {};
+
+      await Promise.all(
+        content.map(async (item, index) => {
+          const desktopUrl = item.img.src;
+          const mobileUrl = item.img.mobileSrc || item.img.src;
+
+          const [desktopBase64, mobileBase64] = await Promise.all([
+            desktopUrl ? urlToBase64(desktopUrl) : Promise.resolve(undefined),
+            mobileUrl ? urlToBase64(mobileUrl) : Promise.resolve(undefined),
+          ]);
+
+          buffer[index] = {
+            desktop: desktopBase64,
+            mobile: mobileBase64,
+          };
+        })
+      );
+
+      if (!cancelled) {
+        setImgBuffer(buffer);
+      }
+    }
+
+    preload();
+
+    return () => {
+      cancelled = true;
     };
   }, [content]);
 

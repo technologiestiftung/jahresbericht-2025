@@ -478,7 +478,7 @@ const content = {
         name: "Edith Roßbach",
         position: "Abteilungsleitung Zentrale Dienste",
         intro:
-          "Digitalisierung ist nie Selbstzweck &ndash; sie soll Kultur sichtbar, zugänglich und erlebbar machen und damit neue Formen der Teilhabe ermöglichen.",
+          "Wir sind Brückenbauerinnen und Brückenbauer zwischen Wissenschaft, Wirtschaft, Stadtgesellschaft und Verwaltung &ndash; und sorgen dafür, dass Digitalisierung dort ankommt, wo sie gebraucht wird.",
         img: {
           src: "assets/09-Stimmen/TSB-Jahresbericht-2025-Stimmen-06-Edith.webp",
           alt: "Porträt von Edith",
