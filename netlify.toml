@@ -8,4 +8,4 @@
   status = 200
 
 [[plugins]]
-  package = "@netlify/plugin-inline-functions-env"
+  package = "netlify-plugin-inline-functions-env"
