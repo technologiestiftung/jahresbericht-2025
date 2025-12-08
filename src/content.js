@@ -90,13 +90,13 @@ const content = {
         link: "https://www.technologiestiftung-berlin.de/profil/blog/jobs-mit-daten",
         btnText: "Mehr zu Zukunftjobs mit Daten",
         img: {
-          src: "assets/02-Rueckblick/TSB-Microsite-Jahr-04-GirlsDay-c-Anna_Eschenbacher.webp",
-          alt: "Zwei Mädchen schauen konzentriert auf einen Fragebogen, der auf einem Tisch liegt.",
+          src: "assets/02-Rueckblick/TSB-Microsite-Jahr-04-GirlsDay-c-Marie_Liebscher.webp",
+          alt: "Vier Mädchen stehen an einem Tisch, vor ihnen das Material für die Erstellung eines Schlüsselbundes.",
         },
         imgPosition: "right",
       },
       {
-        title: "Mai 01",
+        title: "Mai",
         content:
           "So sehen die Sieger:innen der Herzen aus: Bei der Challenge zur Entwicklung eines Post-COVID-Datenmodells belegen wir Platz 2.",
         link: "https://www.linkedin.com/posts/technologiestiftung_postcovid-datenmodell-publicdata-activity-7325542313429024770-BM78?utm_source=share&utm_medium=member_desktop&rcm=ACoAABjg1b0Bb80a1_3MRtplZeyZQvis7F1iLmc",
@@ -108,7 +108,7 @@ const content = {
         imgPosition: "left",
       },
       {
-        title: "Mai 02",
+        title: "Mai",
         content:
           "Drei Tage re:publica 2025: Beim digitalen Klassentreffen waren unsere Teams von CityLAB und kulturBdigital wieder mit von der Partie und auf insgesamt acht Bühnen vertreten.",
         link: "https://www.technologiestiftung-berlin.de/profil/blog/von-vibe-coding-bis-digitale-teilhabe-unsere-republica-2025-im-video-rueckblick",
@@ -120,7 +120,7 @@ const content = {
         imgPosition: "right",
       },
       {
-        title: "Juni 01",
+        title: "Juni",
         content:
           "Feuerwehr und Kiezbox im Einsatz:Unsere großangelegte Krisenübung zeigt: Eine stromautarke Kommunikation via Notfall-WLAN ist die Zukunft.",
         link: "https://www.technologiestiftung-berlin.de/profil/blog/jahr-kiezbox-20-wie-geht-krisensichere-hardware-entwicklung-3-learnings",
@@ -132,7 +132,7 @@ const content = {
         imgPosition: "left",
       },
       {
-        title: "Juni 02",
+        title: "Juni",
         content:
           "Zeit für die CityLAB Sommerkonferenz mit rund 900 Gäst:innen, 95 Speaker:innen &ndash; und unzählige Denkanstöße für die digitale Stadt von morgen.",
         link: "https://citylab-berlin.org/de/blog/die-citylab-sommerkonferenz-2025-unser-rueckblick-in-highlight-bildern/",
@@ -180,7 +180,7 @@ const content = {
         imgPosition: "left",
       },
       {
-        title: "Oktober 01",
+        title: "Oktober",
         content:
           "Bäumen mithilfe von KI eine Stimme geben? Das geht. Wie genau, weiß unser  Digital Services Team, das mit dem Talking Treebot bis nach Spanien gereist ist.",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7382400453290086400",
@@ -192,7 +192,7 @@ const content = {
         imgPosition: "right",
       },
       {
-        title: "Oktober 02",
+        title: "Oktober",
         content:
           "Ein Highlight der Berliner Kulturszene &ndash; die kulturBdigital-Jahreskonferenz fand unter dem Motto &bdquo;Besser teilen&ldquo; großen Anklang.",
         link: "https://www.technologiestiftung-berlin.de/profil/blog/besser-teilen-das-war-die-kulturbdigital-konferenz-2025",
@@ -274,7 +274,7 @@ const content = {
           link: "https://innovationsdaten.ts.berlin/",
           img: {
             src: "assets/04-NeueTechnologien/TSB-Jahresbericht-2025-NeueTechnologien-01.webp",
-            alt: "Ein Smartphone, das die Website der Innovationserhebung 2024 zeigt.",
+            alt: "Ein Smartphone, das die Website der Innovationserhebung 2025 zeigt.",
           },
         },
       ],
@@ -288,7 +288,7 @@ const content = {
           id: "bildung1",
           title: "25 Jahre Wissenschaft zum Anfassen",
           paragraph:
-            "Seit ihrer Mitgründung begleitet die Technologiestiftung die Lange Nacht der Wissenschaften, prägt sie bis heute als aktives Vorstandsmitglied und bringt Wissenschaft und Stadtgesellschaft miteinander ins Gespräch. Seit 25 Jahren setzen wir uns dafür ein, Forschung zugänglich, Technologie verständlich und Wissen anwendbar zu machen. Mit Formaten zu Künstlicher Intelligenz, offenen Daten und Prototyping zeigen wir, wie aus Erkenntnissen konkrete Lösungen entstehen &ndash; und wie Berlin von dieser Offenheit profitiert.",
+            "Die Berliner Wissenschaftslandschaft ist traditionell stark und vielfältig aufgestellt &ndash; von exzellenter Grundlagenforschung bis hin zu praktischer Anwendung. Aber wie kommt Wissenschaft in die Stadtgesellschaft? Die Technologiestiftung Berlin unterstützt seit 2001 die Initiative der Berliner Wissenschaftseinrichtungen, in der „Langen Nacht der Wissenschaften“ ihre Türen für die Berliner:innen zu öffnen und Einblicke in ihre faszinierende Welt zu geben. 2025 haben wir das 25-jährige Jubiläum dieses größten deutschen Wissenschaftsfestivals mit mehr als 36.000 Besuchenden gefeiert und sind stolz, sowohl durch die Mitarbeit im Vorstand als auch mit der Präsentation unserer Kiezbox auf dem TU-Gelände daran mitgewirkt zu haben.",
           img: {
             src: "assets/05-Bildung/TSB-Jahresbericht-2025-Bildung-01.webp",
             alt: "Stand der Technologiestiftung Berlin während der Langen Nacht der Wissenschaften. Auf dem Tisch steht die Kiezbox und ein Screen, dahinter stehen drei Mitarbeitende und grüßen in die Kamera.",
@@ -404,7 +404,7 @@ const content = {
           id: "weitereAktivitaeten2",
           title: "Stiftungsprofessur &bdquo;Analytische Röntgenphysik&ldquo;",
           paragraph:
-            "Die Stiftung Analytische Röntgenphysik wird heute von zwölf Stifter:innen getragen, hauptsächlich kleine und mittlere Unternehmen aus der Röntgentechnologiebranche. Seit 2009 bekleidet Prof. Birgit Kanngießer eine Stiftungsprofessur an der Technischen Universität Berlin (TU Berlin), deren Finanzierung ab 2012 durch die Stiftung ermöglicht wurde. In der aktuellen Förderperiode von 2021 bis 2026 werden jährlich weitere 45.000 € bereitgestellt, sodass die TU Berlin über die gesamte Laufzeit mehr als 1,2 Millionen € für die Forschung im Bereich kurzwelliger Strahlung am Institut für Optik und Atomare Physik (IOAP) erhält. Die Technologiestiftung Berlin unterstützt die Stiftung weiterhin als kostenfreie Treuhänderin.",
+            "Die Stiftung Analytische Röntgenphysik wird von 13 Stifter:innen getragen, zumeist kleine und mittlere Unternehmen aus der Röntgenanalytik-Branche. Seit 2009 bekleidet Prof. Birgit Kanngießer eine Stiftungsprofessur an der Technischen Universität Berlin (TU Berlin), deren Finanzierung ab 2012 durch die Stiftung ermöglicht wurde. In der aktuellen Förderperiode von 2021 bis 2026 werden jährlich weitere 45.000 € sowie 96.300 € an Sonderzuwendungen bereitgestellt, sodass der TU Berlin am Institut für Physik und Astronomie über die gesamte Laufzeit rund 1,25 Millionen € für die Forschung im Bereich kurzwelliger Strahlung zufließen. Die Technologiestiftung Berlin als Treuhänderin unterstützt die Stiftung ohne Kosten.",
           img: {
             src: "assets/08-Weiteres/TSB-Jahresbericht-2024-Weiteres-03.webp",
             alt: "Blick auf das Hauptgebäude der Technischen Universität Berlin.",
@@ -504,14 +504,14 @@ const content = {
       {
         title: "Jahresabschluss",
         content:
-          "Zu ihrer Arbeit stellt die Technologiestiftung Berlin jährlich einen Jahresabschluss auf, der von einer vom Kuratorium benannten Wirtschaftsprüfungsgesellschaft geprüft wird.<br><br>Der Jahresabschluss wird vorraussichtlich im Juni 2025 im Downloadbereich auf der Webseite der Technologiestiftung Berlin zur Verfügung gestellt.",
+          "Zu ihrer Arbeit stellt die Technologiestiftung Berlin jährlich einen Jahresabschluss auf, der von einer vom Kuratorium benannten Wirtschaftsprüfungsgesellschaft geprüft wird.<br><br>Der Jahresabschluss wird vorraussichtlich im Juni 2026 im Downloadbereich auf der Webseite der Technologiestiftung Berlin zur Verfügung gestellt.",
         link: "https://www.technologiestiftung-berlin.de/downloads",
         btnText: "Zum Downloadbereich",
       },
       {
         title: "Auf dem Laufenden bleiben",
         content:
-          "Das Jahr 2024 war für die Technologiestiftung ein spannendes Jahr, in dem sie viele Projekte erfolgreich durchführen konnte. Gleichzeitig entwickelten sich neue Aufgaben und Projekte, die im Jahr 2025 realisiert werden.<br><br>Über die laufende Arbeit informiert der Blog und der monatlich erscheinende Newsletter, der allen Abonennt:innen kostenfrei zugeschickt wird.",
+          "Das Jahr 2025 war für die Technologiestiftung ein spannendes Jahr, in dem sie viele Projekte erfolgreich durchführen konnte. Gleichzeitig entwickelten sich neue Aufgaben und Projekte, die im Jahr 2026 realisiert werden.<br><br>Über die laufende Arbeit informiert der Blog und der monatlich erscheinende Newsletter, der allen Abonennt:innen kostenfrei zugeschickt wird.",
         link: "https://www.technologiestiftung-berlin.de/newsletter",
         btnText: "Zur Anmeldung",
       },
