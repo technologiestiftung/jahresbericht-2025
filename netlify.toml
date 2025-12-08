@@ -1,6 +1,6 @@
 [build]
-  publish = "build/"
-  command = "curl --fail $FONTS_URL --output fonts.zip && unzip -j fonts.zip -d src/fonts && rm fonts.zip && npm install && npm run build"
+  publish = "dist"
+  command = "curl --fail $FONTS_URL --output fonts.zip && ls -lh fonts.zip && unzip -j fonts.zip -d public/fonts && rm fonts.zip && npm install && npm run build"
 
 [[redirects]]
   from = "/*"
