@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "mkdir -p public/fonts && curl --fail $FONTS_URL_1 --output public/fonts/ClanWebPro-News.woff && curl --fail $FONTS_URL_2 --output public/fonts/ClanWebPro-Bold.woff && curl --fail $FONTS_URL_3 --output public/fonts/SourceSerifPro-Regular.woff && curl --fail $FONTS_URL_4 --output public/fonts/SourceSerifPro-Bold.woff && npm install && npm run build"
+  command = "curl --fail $FONTS_URL --output fonts.zip && unzip -j fonts.zip -d src/fonts && rm fonts.zip && npm install && npm run build"
 
 [[redirects]]
   from = "/*"
