@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build:app": "vite build",
-    "build": "npm run build:app && node scripts/inject-matomo-url.js",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "lint:fix": "eslint --fix",
