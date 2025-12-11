@@ -29,7 +29,7 @@ function NavBar() {
       icon: <NeueTechnologienIcon />,
     },
     {
-      name: "Bildung",
+      name: "Wissenschaft & Bildung",
       icon: <BildungIcon />,
     },
     {
