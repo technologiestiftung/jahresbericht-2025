@@ -282,7 +282,7 @@ const content = {
     {
       id: "bildung",
       title: "Bildung",
-      text: "Digitale Fähigkeiten entstehen nicht allein im Klassenzimmer &ndash; sie wachsen dort, wo Menschen Technik anfassen, Fragen stellen und gemeinsam nach Lösungen suchen. Seit vielen Jahren arbeiten wir eng mit Schulen, Hochschulen und Wissenschaftseinrichtungen in Berlin zusammen. Wir greifen Bedarfe und Ideen aus der Praxis auf und entwickeln Formate, die Technologien verständlich machen, digitale Kompetenzen vermitteln und neue Arbeitsmethoden erlebbar machen.",
+      text: "Digitale Fähigkeiten entstehen nicht allein im Klassenzimmer &ndash; sie wachsen dort, wo Menschen Technik anfassen, Fragen stellen und gemeinsam nach Lösungen suchen. Seit vielen Jahren arbeiten wir eng mit Hochschulen, Wissenschaft und rbb24 Inforadio in Berlin zusammen.",
       projects: [
         {
           id: "bildung1",
